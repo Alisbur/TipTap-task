@@ -1,0 +1,21 @@
+@import "../../styles/variables.less";
+
+.button {
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 10px 21px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  background-color: @buttonBgColor;
+  color: @buttonContentColor;
+  font-size: 14px;
+
+  svg > path {
+    // fill: @buttonContentColor;
+    stroke: @buttonContentColor;
+  }
+}

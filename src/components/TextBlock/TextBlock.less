@@ -1,0 +1,29 @@
+@import "../../shared/styles/variables.less";
+
+.textBlock {
+  position: relative;
+  min-height: 500px;
+  height: 100%;
+  background-color: @textFieldBgColor;
+  border-radius: 16px;
+
+  &_topGradient, &_bottomGradient {
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  
+  &_topGradient {
+    top: 0;
+    border-radius: 16px 16px 0 0;
+    background: linear-gradient(@textFieldBgColor, @textFieldBgTranparentColor);
+  }
+  
+  &_bottomGradient {
+    bottom: 0;
+    border-radius: 0 0 16px 16px;  
+    background: linear-gradient(to top, @textFieldBgColor, @textFieldBgTranparentColor);
+  }
+}
+

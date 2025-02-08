@@ -1,0 +1,26 @@
+@import "../../../shared/styles/variables.less";
+
+.menu-item {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  color: transparent;
+  cursor: pointer;
+
+  svg > path {
+    fill: @menuItemIconColor;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:hover,
+  &.is-active {
+    background-color: @menuItemBgColor;
+
+    svg > path {
+      fill: @menuItemIconActiveColor;
+    }
+  }
+}

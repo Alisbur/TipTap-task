@@ -1,0 +1,35 @@
+@import "../../shared/styles/variables.less";
+
+.editorWrapper {
+  background-color: @textFieldBgColor;
+  border: 1px solid @editorBorderColor;
+  border-radius: 16px;
+  min-height: 56px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: calc((100vw - @sidebarWidth * 2) * 0.8);
+  padding: 10px;
+  max-height: 100px;
+}
+
+.editor {
+  background-color: transparent;
+  outline: none;
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  max-height: 100px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  line-height: 1.2;
+  font-size: 16px;
+  color: @editorTextColor;
+
+  div {
+    outline: none;
+    width: 100%;
+    word-wrap: break-word;
+  }
+}
